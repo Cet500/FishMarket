@@ -1,0 +1,10 @@
+.text-big{
+	font-family: Comfortaa, sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.no-link{
+	text-decoration: none;
+	color: inherit;
+}

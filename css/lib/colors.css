@@ -1,0 +1,10 @@
+:root{
+	--clr-white: #FFFFFF;
+	--clr-black: #000000;
+
+	--clr-orange: #CC5629;
+}
+
+.text-white{
+	color: var(--clr-white);
+}
