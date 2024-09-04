@@ -3,6 +3,15 @@
 	--clr-black: #000000;
 
 	--clr-orange: #CC5629;
+	--clr-orange-75: #CC5729BF;
+	--clr-orange-50: #CC572980;
+	--clr-orange-20: #CC562933;
+
+	--clr-yellow: #FFA61F;
+	--clr-yellow-30: #FFA61F4C;
+	--clr-yellow-15: #FFA61F26;
+
+	--clr-bg: #FFF2DE;
 }
 
 .text-white{

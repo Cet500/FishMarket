@@ -1,6 +1,10 @@
 .body{
+	display: grid;
+	grid-template-rows: auto auto 1fr auto;
+	min-height: 100vh;
 	margin: 0;
 	padding: 0;
+	background-color: var(--clr-bg);
 }
 .header{
 	background-color: var(--clr-orange);
@@ -26,5 +30,34 @@
 	padding-left: 0;
 }
 .nav-menu__item{
+
+}
+.breadcrumbs{
+
+}
+.breadcrumbs__inner{
+	width: calc(1500px - 80px);
+	margin: 0 auto;
+	padding: 5px 40px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: var(--clr-orange-50);
+}
+.main{
+
+}
+.footer{
+	background-color: var(--clr-orange);
+}
+.footer__inner{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+	width: 1500px;
+	margin: 0 auto;
+}
+.footer__nav{
 
 }
