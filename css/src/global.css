@@ -43,6 +43,13 @@
 	border-bottom-right-radius: 20px;
 	background-color: var(--clr-orange-50);
 }
+.breadcrumbs__inner:has(.no-link){
+	font-weight: 900;
+}
+.breadcrumbs__inner .no-link{
+	font-weight: 500;
+	color: var(--clr-dark-gray);
+}
 .main{
 
 }
