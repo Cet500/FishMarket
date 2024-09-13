@@ -140,6 +140,39 @@
 	margin: 20px;
 }
 
+.block-number__wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.block-number{
+	position: relative;
+	width: calc(calc(100% - 150px) / 2);
+	padding: 30px;
+	border-radius: 25px;
+}
+.block-number__bg{
+	position: absolute;
+	font-family: Shrikhand, cursive;
+	font-size: 200px;
+	line-height: 200px;
+	width: 200px;
+	height: 200px;
+	display: block;
+	bottom: 0;
+	right: 20px;
+	z-index: -1;
+	color: var(--clr-orange-50);
+	text-align: right;
+}
+.block-number .text-big{
+	margin-top: 0;
+}
+.block-number .text-normal{
+	margin-bottom: 0;
+}
+
 @media screen and (max-width: 1540px) {
 
 	.block{

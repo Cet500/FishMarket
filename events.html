@@ -1,78 +1,193 @@
 <!doctype html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<title>Fish Market</title>
+		<title>Fish Market</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/lib/colors.css">
-	<link rel="stylesheet" href="css/src/global.css">
-	<link rel="stylesheet" href="css/lib/blocks.css">
-	<link rel="stylesheet" href="css/lib/text.css">
-	<link rel="stylesheet" href="css/src/media.css">
-</head>
+		<link rel="stylesheet" href="css/lib/colors.css">
+		<link rel="stylesheet" href="css/src/global.css">
+		<link rel="stylesheet" href="css/lib/blocks.css">
+		<link rel="stylesheet" href="css/lib/text.css">
+		<link rel="stylesheet" href="css/src/media.css">
+	</head>
 
-<body class="body">
-<header class="header">
-	<div class="header__inner">
-		<a href="index.html" class="no-link">
-			<img class="logo" src="img/logo/logo_normal.png" alt="Логотип">
-		</a>
+	<body class="body">
+		<header class="header">
+			<div class="header__inner">
+				<a href="index.html" class="no-link">
+					<img class="logo" src="img/logo/logo_normal.png" alt="Логотип">
+				</a>
 
-		<nav class="nav">
-			<ul class="nav__menu">
-				<li class="nav-menu__item text-big text-white">
-					<a href="about.html" class="no-link">О нас</a>
-				</li>
-				<li class="nav-menu__item text-big text-white">
-					<a href="events.html" class="no-link">Акции</a>
-				</li>
-				<li class="nav-menu__item text-big text-white">
-					<a href="shop.html" class="no-link">Магазин</a>
-				</li>
-				<li class="nav-menu__item text-big text-white">
+				<nav class="nav">
+					<ul class="nav__menu">
+						<li class="nav-menu__item text-big text-white">
+							<a href="about.html" class="no-link">О нас</a>
+						</li>
+						<li class="nav-menu__item text-big text-white">
+							<a href="events.html" class="no-link">Акции</a>
+						</li>
+						<li class="nav-menu__item text-big text-white">
+							<a href="shop.html" class="no-link">Магазин</a>
+						</li>
+						<li class="nav-menu__item text-big text-white">
+							<a href="cart.html" class="no-link">Корзина</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="breadcrumbs">
+			<p class="breadcrumbs__inner text-normal">
+				Fish Market
+			</p>
+		</div>
+
+		<main class="main">
+			<div class="block block-title block-yellow-15 text-big">
+				Акции на Fish Market
+			</div>
+
+			<div class="block block-yellow-15 block-title text-normal">
+				Наши клиенты - это для нас не просто покупатели, а часть большой морской семьи. Мы всегда стремимся
+				радовать вас и делать ваше морское приключение еще более увлекательным. Именно поэтому мы предлагаем
+				регулярные акции и специальные предложения для вас.
+			</div>
+
+			<div class="block block-fact__wrapper">
+				<div class="block-fact block-yellow-15">
+					<h3 class="block-fact__title text-big text-center block-orange-20">
+						Рыбная неделя
+					</h3>
+
+					<p class="block-fact__text text-normal">
+						Каждую неделю мы выбираем один вид рыбы и предлагаем его по специальной цене. Это уникальная
+						возможность попробовать что-то новое и интересное.
+					</p>
+				</div>
+
+				<div class="block-fact block-yellow-15">
+					<h3 class="block-fact__title text-big text-center block-orange-20">
+						Лови волну вкуса
+					</h3>
+
+					<p class="block-fact__text text-normal">
+						Когда у нас появляются свежие поставки рыбы, мы объявляем специальные скидки на эти товары.
+						Следите за новостями!
+					</p>
+				</div>
+
+				<div class="block-fact block-yellow-15">
+					<h3 class="block-fact__title text-big text-center block-orange-20">
+						Бонус за верность
+					</h3>
+
+					<p class="block-fact__text text-normal">
+						Для наших постоянных клиентов у нас есть программа лояльности. С каждой покупки вы получаете
+						бонусы, которые можно обменять на скидки.
+					</p>
+				</div>
+			</div>
+
+			<div class="block block-title block-orange-75 text-white text-big">
+				Как участвовать
+			</div>
+
+			<div class="block block-number__wrapper">
+				<div class="block-number block-yellow-15">
+					<h3 class="text-big">
+						Следите за акциями
+					</h3>
+
+					<p class="text-normal">
+						Чтобы участвовать в наших акциях, просто следите за нашими объявлениями на нашем сайте и в
+						социальных сетях. Мы регулярно информируем наших клиентов о предстоящих акциях.
+					</p>
+
+					<span class="block-number__bg">1</span>
+				</div>
+
+				<div class="block-number block-yellow-15">
+					<h3 class="text-big">
+						Программа лояльности
+					</h3>
+
+					<p class="text-normal">
+						Для тех, кто хочет получать бонусы по программе лояльности, регистрация на нашем сайте -
+						это первый шаг. Это легко сделать и позволит вам накапливать бонусы с каждой покупки.
+					</p>
+
+					<span class="block-number__bg">2</span>
+				</div>
+			</div>
+
+			<div class="block block-title block-orange-75 text-white text-big">
+				Бонус за верность
+			</div>
+
+			<div class="block block-fact__wrapper">
+				<div class="block-fact block-yellow-15">
+					<h3 class="block-fact__title text-big text-center block-orange-20">
+						Экономия
+					</h3>
+
+					<p class="block-fact__text text-normal">
+						Программа лояльности "Бонус за верность" позволяет вам экономить на будущих покупках,
+						получая скидки за накопленные бонусы.
+					</p>
+				</div>
+
+				<div class="block-fact block-yellow-15">
+					<h3 class="block-fact__title text-big text-center block-orange-20">
+						Подарки и бонусы
+					</h3>
+
+					<p class="block-fact__text text-normal">
+						Время от времени, мы также предлагаем дополнительные бонусы, подарки и специальные предложения
+						для участников программы лояльности.
+					</p>
+				</div>
+
+				<div class="block-fact block-yellow-15">
+					<h3 class="block-fact__title text-big text-center block-orange-20">
+						Особый опыт
+					</h3>
+
+					<p class="block-fact__text text-normal">
+						Участники программы получают специальные рекомендации и предложения, основанные на их покупках
+						и предпочтениях.
+					</p>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__inner">
+				<a href="index.html" class="no-link">
+					<img class="logo" src="img/logo/logo_normal.png" alt="Логотип">
+				</a>
+
+				<p class="text-normal text-white text-center">
+					Основано в 2024 году<br>
+					Все права защищены<br>
+					by SergoIndustries with Love
+				</p>
+
+				<nav class="footer__nav text-normal text-white text-right">
+					<a href="about.html" class="no-link">О нас</a>  /
+					<a href="events.html" class="no-link">Акции</a>  /
+					<a href="shop.html" class="no-link">Магазин</a>  /
 					<a href="cart.html" class="no-link">Корзина</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-</header>
-
-<div class="breadcrumbs">
-	<p class="breadcrumbs__inner text-normal">
-		Fish Market
-	</p>
-</div>
-
-<main class="main">
-
-</main>
-
-<footer class="footer">
-	<div class="footer__inner">
-		<a href="index.html" class="no-link">
-			<img class="logo" src="img/logo/logo_normal.png" alt="Логотип">
-		</a>
-
-		<p class="text-normal text-white text-center">
-			Основано в 2024 году<br>
-			Все права защищены<br>
-			by SergoIndustries with Love
-		</p>
-
-		<nav class="footer__nav text-normal text-white text-right">
-			<a href="about.html" class="no-link">О нас</a>  /
-			<a href="events.html" class="no-link">Акции</a>  /
-			<a href="shop.html" class="no-link">Магазин</a>  /
-			<a href="cart.html" class="no-link">Корзина</a>
-		</nav>
-	</div>
-</footer>
-</body>
+				</nav>
+			</div>
+		</footer>
+	</body>
 </html>
