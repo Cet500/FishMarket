@@ -107,6 +107,39 @@
 	border-radius: 25px;
 }
 
+.block-achievements{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	gap: 50px;
+}
+.block-achievements__item{
+	padding: 0 20px;
+	border-radius: 25px;
+}
+.block-achievements__item .text-shrikhand{
+	display: block;
+}
+
+.block-fact__wrapper{
+	display: flex;
+	gap: 35px;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.block-fact{
+	width: calc(calc(100% - 70px) / 3);
+	border-radius: 25px;
+}
+.block-fact__title{
+	margin: 0;
+	padding: 20px 0;
+	border-radius: 25px;
+}
+.block-fact__text{
+	margin: 20px;
+}
+
 @media screen and (max-width: 1540px) {
 
 	.block{

@@ -18,3 +18,6 @@
 .text-white{
 	color: var(--clr-white);
 }
+.text-orange-75 {
+	color: var(--clr-orange-75);
+}
