@@ -215,6 +215,18 @@
 		padding: 8px 20px;
 	}
 
+	.block-achievements{
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	.block-achievements__item{
+		width: calc(calc(100% - 100px) / 2);
+	}
+
+	.block-fact .block-fact__text{
+		font-size: 18px;
+	}
+
 }
 @media screen and (max-width: 900px) {
 
@@ -233,6 +245,14 @@
 
 	.block-shop{
 		align-items: start;
+	}
+
+	.block-fact__wrapper{
+		justify-content: center;
+		row-gap: 20px;
+	}
+	.block-fact{
+		width: calc(calc(100% - 35px) / 2);
 	}
 
 }
@@ -262,8 +282,25 @@
 		padding: 0 20px;
 	}
 
+	.block-achievements__item{
+		width: 100%;
+	}
+
+	.block-fact{
+		width: 100%;
+	}
+
+	.block-number{
+		width: 100%;
+	}
+
 }
 @media screen and (max-width: 600px) {
+
+	.nav__menu{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 
 	.block{
 		--block-width: 100%;
@@ -280,6 +317,22 @@
 	}
 	.block-magic-details__col{
 		width: auto;
+	}
+
+}
+@media screen and (max-width: 500px) {
+
+	.block-pagination__item{
+		font-size: 20px;
+		padding: 6px 16px;
+	}
+
+}
+@media screen and (max-width: 400px) {
+
+	.logo{
+		height: auto;
+		width: 100%;
 	}
 
 }
