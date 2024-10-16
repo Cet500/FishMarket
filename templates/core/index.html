@@ -1,305 +1,241 @@
+{% extends 'core/base.html' %}
 {% load static %}
 
 
-<!doctype html>
-<html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+{% block title %}
+    Главная
+{% endblock %}
 
-		<title>Fish Market</title>
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+{% block breadcrumbs %}
+	Fish Market
+{% endblock %}
 
-		<link rel="stylesheet" href="{% static 'core/css/lib/colors.css' %}">
-		<link rel="stylesheet" href="{% static 'core/css/src/global.css' %}">
-		<link rel="stylesheet" href="{% static 'core/css/lib/blocks.css' %}">
-		<link rel="stylesheet" href="{% static 'core/css/lib/text.css' %}">
-		<link rel="stylesheet" href="{% static 'core/css/src/media.css' %}">
-	</head>
 
-	<body class="body">
-		<header class="header">
-			<div class="header__inner">
-				<a href="index.html" class="no-link">
-					<img class="logo" src="{% static 'core/img/logo/logo_normal.png' %}" alt="Логотип">
-				</a>
+{% block main %}
+	<div class="block block-yellow-15 block-title text-big">
+        Добро пожаловать в Fish Market, ваш уютный уголок морских приключений!
+    </div>
 
-				<nav class="nav">
-					<ul class="nav__menu">
-						<li class="nav-menu__item text-big text-white">
-							<a href="about.html" class="no-link">О нас</a>
-						</li>
-						<li class="nav-menu__item text-big text-white">
-							<a href="events.html" class="no-link">Акции</a>
-						</li>
-						<li class="nav-menu__item text-big text-white">
-							<a href="shop.html" class="no-link">Магазин</a>
-						</li>
-						<li class="nav-menu__item text-big text-white">
-							<a href="cart.html" class="no-link">Корзина</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+    <div class="block block-yellow-15 block-title text-normal">
+        У нас вы найдете самое разнообразное собрание рыбы - не только ту, что обитает в реальности, но и ту,
+        которой еще нет в морских глубинах. Мы создаем магию рыболовства!
+        <br><br>
+        На данный момент акции и скидки могут быть в будущем, но обещаем удивить вас интересными предложениями.
+        А наша рыба - это не только продукт, это искусство, которое мы с гордостью предлагаем вам.
+        <br><br>
+        Погрузитесь в мир вкуса и удовольствия вместе с нами. Добро пожаловать в Fish Market, где фантазия
+        становится вкусной реальностью
+    </div>
 
-        <div class="breadcrumbs">
-            <p class="breadcrumbs__inner text-normal">
-                Fish Market
+    <div class="block block-orange-75 block-title text-big text-white">
+        Популярные рыбки
+    </div>
+
+    <div class="block block-fish__wrapper text-normal">
+
+        <div class="block-fish block-orange-20">
+            <img class="block-fish__image" src="{% static 'core/img/fish/fish_1.png' %}" alt="Петушки - красный и золотой">
+
+            <h2 class="block-fish__title">Петушки</h2>
+
+            <p class="block-fish__text">
+                Петушки, или как их также называют - меченосцы, являются живоплодными и красочными
+                обитателями аквариумов. Их красивые хвостовые плавники напоминают мечи, что делает их
+                удивительно привлекательными. В нашем Fish Market вы найдете разнообразие сортов петушков
+                для украшения вашего аквариума.
             </p>
         </div>
 
-        <main class="main">
-            <div class="block block-yellow-15 block-title text-big">
-	            Добро пожаловать в Fish Market, ваш уютный уголок морских приключений!
-            </div>
+        <div class="block-fish block-orange-20">
+            <img class="block-fish__image" src="{% static 'core/img/fish/fish_2.png' %}" alt="Петушки - красный и золотой">
 
-	        <div class="block block-yellow-15 block-title text-normal">
-		        У нас вы найдете самое разнообразное собрание рыбы - не только ту, что обитает в реальности, но и ту,
-		        которой еще нет в морских глубинах. Мы создаем магию рыболовства!
-		        <br><br>
-		        На данный момент акции и скидки могут быть в будущем, но обещаем удивить вас интересными предложениями.
-		        А наша рыба - это не только продукт, это искусство, которое мы с гордостью предлагаем вам.
-		        <br><br>
-		        Погрузитесь в мир вкуса и удовольствия вместе с нами. Добро пожаловать в Fish Market, где фантазия
-		        становится вкусной реальностью
-	        </div>
+            <h2 class="block-fish__title">Скалярии</h2>
 
-	        <div class="block block-orange-75 block-title text-big text-white">
-		        Популярные рыбки
-	        </div>
+            <p class="block-fish__text">
+                Скалярии, или ангельские рыбки, известны своими высокими и изящными плавниками. Они добавят
+                изысканности вашему аквариуму и порадуют вас своим элегантным видом. Приходите к нам, чтобы
+                выбрать скалярий, который станет настоящей жемчужиной вашего аквариума.
+            </p>
+        </div>
 
-	        <div class="block block-fish__wrapper text-normal">
+        <div class="block-fish block-orange-20">
+            <img class="block-fish__image" src="{% static 'core/img/fish/fish_3.png' %}" alt="Петушки - красный и золотой">
 
-		        <div class="block-fish block-orange-20">
-			        <img class="block-fish__image" src="img/fish/fish_1.png" alt="Петушки - красный и золотой">
+            <h2 class="block-fish__title">Барбусы</h2>
 
-			        <h2 class="block-fish__title">Петушки</h2>
+            <p class="block-fish__text">
+                Барбусы - это активные и интересные обитатели аквариумов. Они доступны в разных цветовых
+                вариациях и могут стать живым украшением вашего аквариума. На Fish Market вы найдете
+                разнообразие барбусов для выбора.
+            </p>
+        </div>
 
-			        <p class="block-fish__text">
-				        Петушки, или как их также называют - меченосцы, являются живоплодными и красочными
-				        обитателями аквариумов. Их красивые хвостовые плавники напоминают мечи, что делает их
-				        удивительно привлекательными. В нашем Fish Market вы найдете разнообразие сортов петушков
-				        для украшения вашего аквариума.
-			        </p>
-		        </div>
+        <div class="block-fish block-orange-20">
+            <img class="block-fish__image" src="{% static 'core/img/fish/fish_4.png' %}" alt="Петушки - красный и золотой">
 
-		        <div class="block-fish block-orange-20">
-			        <img class="block-fish__image" src="img/fish/fish_2.png" alt="Петушки - красный и золотой">
+            <h2 class="block-fish__title">Данио</h2>
 
-			        <h2 class="block-fish__title">Скалярии</h2>
+            <p class="block-fish__text">
+                Данио - это живые стрелки аквариума. Они известны своей быстротой и активностью.
+                Добавьте динамику в свой аквариум, выбрав данио среди нашего разнообразия рыб.
+            </p>
+        </div>
 
-			        <p class="block-fish__text">
-				        Скалярии, или ангельские рыбки, известны своими высокими и изящными плавниками. Они добавят
-				        изысканности вашему аквариуму и порадуют вас своим элегантным видом. Приходите к нам, чтобы
-				        выбрать скалярий, который станет настоящей жемчужиной вашего аквариума.
-			        </p>
-		        </div>
+        <div class="block-fish block-orange-20">
+            <img class="block-fish__image" src="{% static 'core/img/fish/fish_5.png' %}" alt="Петушки - красный и золотой">
 
-		        <div class="block-fish block-orange-20">
-			        <img class="block-fish__image" src="img/fish/fish_3.png" alt="Петушки - красный и золотой">
+            <h2 class="block-fish__title">Анциструс</h2>
 
-			        <h2 class="block-fish__title">Барбусы</h2>
+            <p class="block-fish__text">
+                Анциструс - ваши надежные помощники в борьбе с водорослями и поддержании чистоты аквариума.
+                Эти рыбки, также известные как 'сомики,' позаботятся о вашем аквариуме. У нас есть широкий
+                выбор анциструсов для вас.
+            </p>
+        </div>
 
-			        <p class="block-fish__text">
-				        Барбусы - это активные и интересные обитатели аквариумов. Они доступны в разных цветовых
-				        вариациях и могут стать живым украшением вашего аквариума. На Fish Market вы найдете
-				        разнообразие барбусов для выбора.
-			        </p>
-		        </div>
+        <div class="block-fish block-orange-20">
+            <img class="block-fish__image" src="{% static 'core/img/fish/fish_6.png' %}" alt="Петушки - красный и золотой">
 
-		        <div class="block-fish block-orange-20">
-			        <img class="block-fish__image" src="img/fish/fish_4.png" alt="Петушки - красный и золотой">
+            <h2 class="block-fish__title">Тернеция</h2>
 
-			        <h2 class="block-fish__title">Данио</h2>
+            <p class="block-fish__text">
+                Тернеция - это маленькие жемчужины аквариума. Их небольшой размер и красочные окраски делают
+                их отличным выбором для мини-аквариумов. Приходите и узнайте больше о разнообразии тернеций
+                на Fish Market.
+            </p>
+        </div>
 
-			        <p class="block-fish__text">
-				        Данио - это живые стрелки аквариума. Они известны своей быстротой и активностью.
-				        Добавьте динамику в свой аквариум, выбрав данио среди нашего разнообразия рыб.
-			        </p>
-		        </div>
+    </div>
 
-		        <div class="block-fish block-orange-20">
-			        <img class="block-fish__image" src="img/fish/fish_5.png" alt="Петушки - красный и золотой">
+    <div class="block block-orange-75 block-title text-big text-white">
+        Самые экзотические рыбки
+    </div>
 
-			        <h2 class="block-fish__title">Анциструс</h2>
+    <div class="block block-yellow-15 block-title text-normal">
+        <b>Добро пожаловать в Мир Экзотики Fish Market!</b>
+        <br><br>
+        У нас вы найдете удивительные экзотические рыбы, которые словно вышли из самых ярких сказок.
+        Эти существа, даже если они не существуют в реальной жизни, приготовлены подарить вам невероятные
+        моменты удивления и восторга.
+        <br><br>
+        Обратите внимание, что наш ассортимент постоянно обновляется, поэтому у нас всегда можно найти что-то
+        новое и удивительное.
+        <br><br>
+        Добро пожаловать в Мир Экзотики, который только начинается у нас в Fish Market. Не упустите свой
+        шанс прикоснуться к волшебству подводного мира!
+    </div>
 
-			        <p class="block-fish__text">
-				        Анциструс - ваши надежные помощники в борьбе с водорослями и поддержании чистоты аквариума.
-				        Эти рыбки, также известные как 'сомики,' позаботятся о вашем аквариуме. У нас есть широкий
-				        выбор анциструсов для вас.
-			        </p>
-		        </div>
+    <div class="block block-magic block-yellow-15 text-normal">
+        <img class="block-magic__image" src="{% static 'core/img/fish/fish_7.png' %}" alt="Рыба волшебная">
 
-		        <div class="block-fish block-orange-20">
-			        <img class="block-fish__image" src="img/fish/fish_6.png" alt="Петушки - красный и золотой">
+        <div class="block-magic__text">
+            <h2 class="block-magic-text__title">Золотоспинный Фернунд</h2>
 
-			        <h2 class="block-fish__title">Тернеция</h2>
+            <p class="block-magic-text__text">
+                Это настоящее чудо природы. Её золотая спина переливается в солнечных лучах, словно огонь
+                в воде. Эта рыба выделяется утонченной грацией и привлекает внимание всех, кто встречает
+                ее в аквариуме.
+            </p>
+        </div>
 
-			        <p class="block-fish__text">
-				        Тернеция - это маленькие жемчужины аквариума. Их небольшой размер и красочные окраски делают
-				        их отличным выбором для мини-аквариумов. Приходите и узнайте больше о разнообразии тернеций
-				        на Fish Market.
-			        </p>
-		        </div>
-
-	        </div>
-
-	        <div class="block block-orange-75 block-title text-big text-white">
-		        Самые экзотические рыбки
-	        </div>
-
-	        <div class="block block-yellow-15 block-title text-normal">
-		        <b>Добро пожаловать в Мир Экзотики Fish Market!</b>
-		        <br><br>
-		        У нас вы найдете удивительные экзотические рыбы, которые словно вышли из самых ярких сказок.
-		        Эти существа, даже если они не существуют в реальной жизни, приготовлены подарить вам невероятные
-		        моменты удивления и восторга.
-		        <br><br>
-		        Обратите внимание, что наш ассортимент постоянно обновляется, поэтому у нас всегда можно найти что-то
-		        новое и удивительное.
-		        <br><br>
-		        Добро пожаловать в Мир Экзотики, который только начинается у нас в Fish Market. Не упустите свой
-		        шанс прикоснуться к волшебству подводного мира!
-	        </div>
-
-	        <div class="block block-magic block-yellow-15 text-normal">
-		        <img class="block-magic__image" src="img/fish/fish_7.png" alt="Рыба волшебная">
-
-		        <div class="block-magic__text">
-			        <h2 class="block-magic-text__title">Золотоспинный Фернунд</h2>
-
-			        <p class="block-magic-text__text">
-				        Это настоящее чудо природы. Её золотая спина переливается в солнечных лучах, словно огонь
-				        в воде. Эта рыба выделяется утонченной грацией и привлекает внимание всех, кто встречает
-				        ее в аквариуме.
-			        </p>
-		        </div>
-
-		        <div class="block-magic__details">
-					<div class="block-magic-details__col">
-						<p class="block-magic-details-col__item">
-							У Золотоспинного Фернунда яркая золотая окраска, и ее плавники украшены изящными узорами.
-						</p>
-
-						<p class="block-magic-details-col__item">
-							Для сохранения красоты рыбы регулярно меняйте воду и обеспечивайте аквариум укрытиями.
-						</p>
-					</div>
-
-			        <div class="block-magic-details__col">
-				        <p class="block-magic-details-col__item">
-					        Золотоспинную Фернунду нельзя использовать в качестве пищи. Ее ценность заключается
-					        в ее уникальной красоте. Тем более, это магическое животное, его не очень безопасно кушать.
-				        </p>
-
-				        <p class="block-magic-details-col__item">
-					        Средний размер составляет от 15 до 20 см.
-				        </p>
-			        </div>
-		        </div>
-	        </div>
-
-	        <div class="block block-magic block-yellow-15 text-normal">
-		        <img class="block-magic__image" src="img/fish/fish_8.png" alt="Рыба волшебная">
-
-		        <div class="block-magic__text">
-			        <h2 class="block-magic-text__title">Шаркодельфин Коралловый</h2>
-
-			        <p class="block-magic-text__text">
-				        Это удивительное сочетание дельфина и акулы. Его непередаваемая красота и живописная окраска
-				        делают его живым произведением искусства в мире морских созданий. Эта рыба создает впечатление
-				        морской гармонии в вашем аквариуме.
-			        </p>
-		        </div>
-
-		        <div class="block-magic__details">
-			        <div class="block-magic-details__col">
-				        <p class="block-magic-details-col__item">
-					        Он способен менять свои цвета, словно отражая красоту морских кораллов и голубизны воды.
-				        </p>
-
-				        <p class="block-magic-details-col__item">
-					        Родство с дельфинами и акулами даёт ему невероятную агрессивность и элегантность
-					        одновременно.
-				        </p>
-			        </div>
-
-			        <div class="block-magic-details__col">
-				        <p class="block-magic-details-col__item">
-					        Шаркодельфин Коралловый, как и другие экзотические рыбы, не предназначен для
-					        употребления в пищу. Его ценность заключается в его уникальной внешности.
-				        </p>
-
-				        <p class="block-magic-details-col__item">
-					        Это хищники - будьте осторожны!
-				        </p>
-			        </div>
-		        </div>
-	        </div>
-
-	        <div class="block block-magic block-yellow-15 text-normal">
-		        <img class="block-magic__image" src="img/fish/fish_9.png" alt="Рыба волшебная">
-
-		        <div class="block-magic__text">
-			        <h2 class="block-magic-text__title">Аквалуна</h2>
-
-			        <p class="block-magic-text__text">
-				        Это удивительное существо, которое привносит в ваш аквариум загадочность и волшебство.
-				        Однако, самое удивительное в ней - это способность светиться в темной воде, словно под водой
-				        загораются настоящие морские звезды. Эта рыба приносит в аквариум атмосферу магии.
-			        </p>
-		        </div>
-
-		        <div class="block-magic__details">
-			        <div class="block-magic-details__col">
-				        <p class="block-magic-details-col__item">
-					        Благодаря магии она светится в условиях низкой освещенности. Ее внешний вид уникален и
-					        захватывает воображение.
-				        </p>
-
-				        <p class="block-magic-details-col__item">
-					        Обладает способностью светиться в темной воде, создавая загадочную атмосферу.
-				        </p>
-			        </div>
-
-			        <div class="block-magic-details__col">
-				        <p class="block-magic-details-col__item">
-					        Аквалуна сохраняет свою магическую способность свечения только в воде и не предназначена
-					        для приготовления. Из-за возможности светиться она является ядовитой.
-				        </p>
-
-				        <p class="block-magic-details-col__item">
-					        Средний размер составляет от 6 до 9 см.
-				        </p>
-			        </div>
-		        </div>
-	        </div>
-        </main>
-
-        <footer class="footer">
-            <div class="footer__inner">
-	            <a href="index.html" class="no-link">
-		            <img class="logo" src="img/logo/logo_normal.png" alt="Логотип">
-	            </a>
-
-                <p class="text-normal text-white text-center">
-                    Основано в 2024 году<br>
-                    Все права защищены<br>
-                    by SergoIndustries with Love
+        <div class="block-magic__details">
+            <div class="block-magic-details__col">
+                <p class="block-magic-details-col__item">
+                    У Золотоспинного Фернунда яркая золотая окраска, и ее плавники украшены изящными узорами.
                 </p>
 
-                <nav class="footer__nav text-normal text-white text-right">
-	                <a href="about.html" class="no-link">О нас</a>  /
-	                <a href="events.html" class="no-link">Акции</a>  /
-	                <a href="shop.html" class="no-link">Магазин</a>  /
-	                <a href="cart.html" class="no-link">Корзина</a>
-                </nav>
+                <p class="block-magic-details-col__item">
+                    Для сохранения красоты рыбы регулярно меняйте воду и обеспечивайте аквариум укрытиями.
+                </p>
             </div>
-        </footer>
-	</body>
-</html>
+
+            <div class="block-magic-details__col">
+                <p class="block-magic-details-col__item">
+                    Золотоспинную Фернунду нельзя использовать в качестве пищи. Ее ценность заключается
+                    в ее уникальной красоте. Тем более, это магическое животное, его не очень безопасно кушать.
+                </p>
+
+                <p class="block-magic-details-col__item">
+                    Средний размер составляет от 15 до 20 см.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="block block-magic block-yellow-15 text-normal">
+        <img class="block-magic__image" src="{% static 'core/img/fish/fish_8.png' %}" alt="Рыба волшебная">
+
+        <div class="block-magic__text">
+            <h2 class="block-magic-text__title">Шаркодельфин Коралловый</h2>
+
+            <p class="block-magic-text__text">
+                Это удивительное сочетание дельфина и акулы. Его непередаваемая красота и живописная окраска
+                делают его живым произведением искусства в мире морских созданий. Эта рыба создает впечатление
+                морской гармонии в вашем аквариуме.
+            </p>
+        </div>
+
+        <div class="block-magic__details">
+            <div class="block-magic-details__col">
+                <p class="block-magic-details-col__item">
+                    Он способен менять свои цвета, словно отражая красоту морских кораллов и голубизны воды.
+                </p>
+
+                <p class="block-magic-details-col__item">
+                    Родство с дельфинами и акулами даёт ему невероятную агрессивность и элегантность
+                    одновременно.
+                </p>
+            </div>
+
+            <div class="block-magic-details__col">
+                <p class="block-magic-details-col__item">
+                    Шаркодельфин Коралловый, как и другие экзотические рыбы, не предназначен для
+                    употребления в пищу. Его ценность заключается в его уникальной внешности.
+                </p>
+
+                <p class="block-magic-details-col__item">
+                    Это хищники - будьте осторожны!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="block block-magic block-yellow-15 text-normal">
+        <img class="block-magic__image" src="{% static 'core/img/fish/fish_9.png' %}" alt="Рыба волшебная">
+
+        <div class="block-magic__text">
+            <h2 class="block-magic-text__title">Аквалуна</h2>
+
+            <p class="block-magic-text__text">
+                Это удивительное существо, которое привносит в ваш аквариум загадочность и волшебство.
+                Однако, самое удивительное в ней - это способность светиться в темной воде, словно под водой
+                загораются настоящие морские звезды. Эта рыба приносит в аквариум атмосферу магии.
+            </p>
+        </div>
+
+        <div class="block-magic__details">
+            <div class="block-magic-details__col">
+                <p class="block-magic-details-col__item">
+                    Благодаря магии она светится в условиях низкой освещенности. Ее внешний вид уникален и
+                    захватывает воображение.
+                </p>
+
+                <p class="block-magic-details-col__item">
+                    Обладает способностью светиться в темной воде, создавая загадочную атмосферу.
+                </p>
+            </div>
+
+            <div class="block-magic-details__col">
+                <p class="block-magic-details-col__item">
+                    Аквалуна сохраняет свою магическую способность свечения только в воде и не предназначена
+                    для приготовления. Из-за возможности светиться она является ядовитой.
+                </p>
+
+                <p class="block-magic-details-col__item">
+                    Средний размер составляет от 6 до 9 см.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

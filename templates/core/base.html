@@ -1,3 +1,6 @@
+{% load static %}
+
+
 <!doctype html>
 <html lang="ru">
 	<head>
@@ -5,39 +8,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		<title>Fish Market</title>
+		<title>
+            Fish Market | {% block title %}{% endblock %}
+        </title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="css/lib/colors.css">
-		<link rel="stylesheet" href="css/src/global.css">
-		<link rel="stylesheet" href="css/lib/blocks.css">
-		<link rel="stylesheet" href="css/lib/text.css">
-		<link rel="stylesheet" href="css/src/media.css">
+		<link rel="stylesheet" href="{% static 'core/css/lib/colors.css' %}">
+		<link rel="stylesheet" href="{% static 'core/css/src/global.css' %}">
+		<link rel="stylesheet" href="{% static 'core/css/lib/blocks.css' %}">
+		<link rel="stylesheet" href="{% static 'core/css/lib/text.css'   %}">
+		<link rel="stylesheet" href="{% static 'core/css/src/media.css'  %}">
 	</head>
 
 	<body class="body">
 		<header class="header">
 			<div class="header__inner">
-				<a href="index.html" class="no-link">
-					<img class="logo" src="img/logo/logo_normal.png" alt="Логотип">
+				<a href="{% url 'core:index' %}" class="no-link">
+					<img class="logo" src="{% static 'core/img/logo/logo_normal.png' %}" alt="Логотип">
 				</a>
 
 				<nav class="nav">
 					<ul class="nav__menu">
 						<li class="nav-menu__item text-big text-white">
-							<a href="about.html" class="no-link">О нас</a>
+							<a href="{% url 'core:about' %}" class="no-link">О нас</a>
 						</li>
 						<li class="nav-menu__item text-big text-white">
-							<a href="events.html" class="no-link">Акции</a>
+							<a href="{% url 'core:events' %}" class="no-link">Акции</a>
 						</li>
 						<li class="nav-menu__item text-big text-white">
-							<a href="shop.html" class="no-link">Магазин</a>
+							<a href="{% url 'core:shop' %}" class="no-link">Магазин</a>
+						</li>
+                        <li class="nav-menu__item text-big text-white">
+							<a href="{% url 'core:tests' age=0 %}" class="no-link">Приколы</a>
 						</li>
 						<li class="nav-menu__item text-big text-white">
-							<a href="cart.html" class="no-link">Корзина</a>
+							<a href="{% url 'core:cart' %}" class="no-link">Корзина</a>
 						</li>
 					</ul>
 				</nav>
@@ -46,18 +54,22 @@
 
         <div class="breadcrumbs">
             <p class="breadcrumbs__inner text-normal">
-                Fish Market
+                {% block breadcrumbs %}
+
+                {% endblock %}
             </p>
         </div>
 
         <main class="main">
+            {% block main %}
 
+            {% endblock %}
         </main>
 
         <footer class="footer">
             <div class="footer__inner">
 	            <a href="index.html" class="no-link">
-		            <img class="logo" src="img/logo/logo_normal.png" alt="Логотип">
+		            <img class="logo" src="{% static 'core/img/logo/logo_normal.png' %}" alt="Логотип">
 	            </a>
 
                 <p class="text-normal text-white text-center">
@@ -67,10 +79,10 @@
                 </p>
 
                 <nav class="footer__nav text-normal text-white text-right">
-	                <a href="about.html" class="no-link">О нас</a>  /
-	                <a href="events.html" class="no-link">Акции</a>  /
-	                <a href="shop.html" class="no-link">Магазин</a>  /
-	                <a href="cart.html" class="no-link">Корзина</a>
+	                <a href="{% url 'core:about'  %}" class="no-link">О нас</a> /
+	                <a href="{% url 'core:events' %}" class="no-link">Акции</a> /
+	                <a href="{% url 'core:shop'   %}" class="no-link">Магазин</a> /
+	                <a href="{% url 'core:cart'   %}" class="no-link">Корзина</a>
                 </nav>
             </div>
         </footer>
