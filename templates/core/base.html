@@ -8,9 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		<title>
-            Fish Market | {% block title %}{% endblock %}
-        </title>
+		<title>Fish Market | {% block title %}{% endblock %}</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +38,6 @@
 						</li>
 						<li class="nav-menu__item text-big text-white">
 							<a href="{% url 'core:shop' %}" class="no-link">Магазин</a>
-						</li>
-                        <li class="nav-menu__item text-big text-white">
-							<a href="{% url 'core:tests' age=0 %}" class="no-link">Приколы</a>
 						</li>
 						<li class="nav-menu__item text-big text-white">
 							<a href="{% url 'core:cart' %}" class="no-link">Корзина</a>
